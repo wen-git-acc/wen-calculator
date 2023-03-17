@@ -46,6 +46,9 @@ export function operatorHandler({ numberArray, currSign }: valueObjType): string
   const isOperatorType: boolean = (operatorArr as ReadonlyArray<string>).includes(arrLastElement);
   numberArray.push(arrLastElement);
 
+  if (!arrLastElement) {
+    return numberArray;
+  }
   if (isOperatorType) {
     return numberArray;
   }
