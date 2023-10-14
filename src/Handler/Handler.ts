@@ -2,25 +2,6 @@ import { evaluate } from 'mathjs';
 import { valueObjType } from '../Configs/typeConfigs';
 import { NumberArrType, OperatorArrType, operatorArr, DotArrType, BracketCountType } from './handlerConfigs';
 
-// numberHandler
-// operatorHandler
-// clearHandler
-// decimalHandler
-// equalHandler
-// dotHandler
-
-// function updateArrIsNumber (arrLastElement: string ,numberArray : string[] , currSign: DotArrType | NumberArrType | OperatorArrType) : string[]{
-//   const signToBeAdded = currSign;
-//   let isNumber = Number(arrLastElement);
-//   if (Number.isNaN(isNumber)) {
-//     numberArray.push(arrLastElement);
-//     numberArray.push(signToBeAdded);
-//   } else {
-//     numberArray.push(arrLastElement + signToBeAdded);
-//   }
-//   return numberArray;
-// }
-
 export function numberHandler({ numberArray, currSign }: valueObjType): string[] {
   const numberToBeAdded: NumberArrType = currSign as NumberArrType;
   const arrLastElement: string = numberArray.pop() as string;

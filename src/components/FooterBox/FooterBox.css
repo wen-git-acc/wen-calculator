@@ -1,0 +1,13 @@
+.footerBox {
+    border: none;
+    background-color: transparent;
+    font-size: 24px;
+    color: rgba(32, 28, 32, 1);
+    font-weight: bold;
+    border-radius: 10px;
+    outline: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+
+  }
